@@ -1,11 +1,11 @@
 #
-# Redis Dockerfile
+# Redis Dockerfile with Debian wheezy
 #
-# https://github.com/dockerfile/redis
+# Forked from https://github.com/dockerfile/redis
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM debian:wheezy
 
 # Install Redis.
 RUN \
