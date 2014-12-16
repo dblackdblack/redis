@@ -9,6 +9,7 @@ FROM debian:wheezy
 
 # Install Redis.
 RUN \
+  apt-get update && apt-get -y install ca-certificates wget && \
   cd /tmp && \
   wget http://download.redis.io/redis-stable.tar.gz && \
   tar xvzf redis-stable.tar.gz && \
